@@ -22,4 +22,4 @@ License:
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 Disclaimer:
-Please note that while this AI blog generator is designed to assist with content creation, it is important to review and edit the generated content to ensure accuracy and relevance before publishing.
+Please note that while this AI blog generator is designed to assist with content creation.
