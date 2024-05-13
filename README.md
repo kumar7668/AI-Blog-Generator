@@ -21,5 +21,3 @@ Contributions are welcome! Feel free to submit pull requests or open issues for 
 License:
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Disclaimer:
-Please note that while this AI blog generator is designed to assist with content creation.
