@@ -51,6 +51,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'ai_blog_app.urls'
+LOGIN_URL = 'login'
 
 TEMPLATES = [
     {
@@ -74,22 +75,33 @@ WSGI_APPLICATION = 'ai_blog_app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
 #         'NAME': BASE_DIR / 'db.sqlite3',
+#         'USER' :'',
+#         'PASSWORD' : '',
+#         'HOST' :'' ,
+#         'PORT': ''
+
 #     }
 # }
 
+#do not remove this one vishal , just commnet out it on your env
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        'USER' :'',
-        'PASSWORD' : '',
-        'HOST' :'' ,
-        'PORT': ''
-
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'OPTIONS': {
+        #     'options': '-c search_path=wsmaster0036'
+        # },
+        'HOST': '127.0.0.1',
+        'NAME': 'AI_blog_G',
+        'USER': 'postgres',
+        'PASSWORD': 'admin',
+        'PORT': 5432,
+        'DISABLE_SERVER_SIDE_CURSORS': True,
+        'CONN_MAX_AGE': None,
     }
 }
 
